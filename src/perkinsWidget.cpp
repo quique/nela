@@ -74,10 +74,13 @@ PerkinsWidget::PerkinsWidget(QWidget *parent) : QWidget(parent)
     connect(this, SIGNAL(guiReady()), pm, SLOT(guiReady()));
 
     playSound(dataLocation() + "/sounds/welcome.mp3");
-    while (playingSound) waitMs(50);
-    QTimer::singleShot(50, this, SLOT(emitGuiReady()));
+    while (playingSound) waitMs(20);
+    QTimer::singleShot(30, this, SLOT(emitGuiReady()));
 }
 
+/*!
+    Waits for \a amount milliseconds.
+ */
 void PerkinsWidget::waitMs(int amount)
 {
     QTimer t;
@@ -87,20 +90,31 @@ void PerkinsWidget::waitMs(int amount)
         QApplication::processEvents();
 }
 
-// This signal informs the model that the GUI is ready to receive signals.
-// Thus, it can select the first word.
+
+/*!
+    Emits the GuiReady signal.
+    This signal informs the model that the GUI is ready to receive signals.
+    Thus, it can select the first word.
+ */
 void PerkinsWidget::emitGuiReady()
 {
     emit guiReady();
 }
 
+
+/*!
+    When a key is released, this collects the keys released for 300 ms.
+    After that time, the numbers corresponding to the keys will be passed
+    to parsePoints() to find out to which letter they map.
+    The Intro key repeats the last instruction, and the Esc key quits the program.
+ */
 void PerkinsWidget::keyReleaseEvent(QKeyEvent *keyevent)
 {
     if (keyevent->isAutoRepeat() || !expectingInput)
         return;
 
     int code = keyevent->key();
-    QTimer::singleShot(400, this, SLOT(parsePoints()));
+    QTimer::singleShot(300, this, SLOT(parsePoints()));
 
     switch (code) {
     // FIXME The keys should not be hardcoded.
@@ -149,10 +163,14 @@ void PerkinsWidget::keyReleaseEvent(QKeyEvent *keyevent)
     }  // switch(code)
 }  // keyReleaseEvent(QKeyEvent *keyevent)
 
+
+/*!
+    Plays the sound found in \a soundPath .
+ */
 void PerkinsWidget::playSound(QString soundPath)
 {
     while (playingSound) {
-        waitMs(50);
+        waitMs(20);
     }
 
     qDebug() << "soundPath:" << soundPath;
@@ -164,16 +182,19 @@ void PerkinsWidget::playSound(QString soundPath)
     }
 }
 
+
 void PerkinsWidget::soundFinished()
 {
     playingSound = false;
 }
+
 
 void PerkinsWidget::repeatLastInstruction()
 {
     mediaObject->setCurrentSource(mediaObject->currentSource().fileName()); // For some reason it has to be reset.
     mediaObject->play();
 }
+
 
 void PerkinsWidget::updatePicture(QString svgPath)
 {
@@ -187,6 +208,7 @@ void PerkinsWidget::updatePicture(QString svgPath)
 
     picture->setPixmap(image);
 }
+
 
 void PerkinsWidget::parsePoints()
 {
@@ -208,6 +230,7 @@ void PerkinsWidget::parsePoints()
     emit processInput(strPressedPoints);
 }
 
+
 void PerkinsWidget::wordChanged(Word* askedWord, bool firstTimeForThisWord)
 {
     question->setText(askedWord->questionString());
@@ -222,12 +245,14 @@ void PerkinsWidget::wordChanged(Word* askedWord, bool firstTimeForThisWord)
     expectingInput = true;
 }
 
+
 void PerkinsWidget::correctCharacter(QString& partialAnswer, bool expectMore)
 {
     answer->setText(partialAnswer);
-    playSound(dataLocation() + "/sounds/feedback/keystroke.mp3");
+    if (expectMore) playSound(dataLocation() + "/sounds/feedback/keystroke.mp3");
     expectingInput = expectMore;
 }
+
 
 void PerkinsWidget::incorrectCharacter(QString& correctAnswer, Word* askedWord)
 {
@@ -235,20 +260,23 @@ void PerkinsWidget::incorrectCharacter(QString& correctAnswer, Word* askedWord)
     updatePicture(dataLocation() + "/images/red-not-ok--failure-symbol-by-antares42.svg");
     playSound(dataLocation() + "/sounds/feedback/bummer.mp3");
     playSound(askedWord->solutionPath());
-    while (playingSound) waitMs(50);
+    while (playingSound) waitMs(20);
 }
+
 
 void PerkinsWidget::rightWord()
 {
     updatePicture(dataLocation() + "/images/green-ok--success-symbol-by-antares42.svg");
     playSound(dataLocation() + "/sounds/feedback/goal.mp3");
-    while (playingSound) waitMs(50);
+    while (playingSound) waitMs(20);
 }
+
 
 void PerkinsWidget::criticalMessage(QString title, QString text)
 {
     QMessageBox::critical(this, title, text);
 }
+
 
 void PerkinsWidget::warningMessage(QString title, QString text)
 {
@@ -266,12 +294,14 @@ QString PerkinsWidget::dataLocation()
     return data_folder;
 }
 
+
 QString PerkinsWidget::shortLocale()
 {
     QString shortLocale = QLocale::system().name().left(2);
     if (shortLocale == "C") shortLocale = "en";
     return shortLocale;
 }
+
 
 void PerkinsWidget::clearSettings()
 {

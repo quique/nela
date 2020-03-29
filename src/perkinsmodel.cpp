@@ -56,7 +56,8 @@ PerkinsModel::PerkinsModel(QObject *parent) :
     }
 }
 
-/*
+
+/*!
  * This slot is run once the GUI is ready to receive signals from the model.
  * Thus, the first word can be selected.
  */
@@ -65,10 +66,12 @@ void PerkinsModel::guiReady()
     useNewWord();
 }
 
+
 bool PerkinsModel::checkCharacter(QString strPressedPoints, QChar askedChar)
 {
     return strPressedPoints == braillehash[askedChar];
 }
+
 
 void PerkinsModel::processInput(QString& strPressedPoints)
 {
@@ -123,6 +126,7 @@ void PerkinsModel::processInput(QString& strPressedPoints)
     }
 }
 
+
 void PerkinsModel::useNewWord()
 {
     // Select a new word
@@ -160,6 +164,7 @@ void PerkinsModel::useNewWord()
     emit wordChanged(askedWord, firstTimeForThisWord);
 }
 
+
 void PerkinsModel::saveSettings()
 {
     QSettings settings;
@@ -178,16 +183,17 @@ void PerkinsModel::saveSettings()
     settings.setValue("savedWords", savedWords);
 }
 
+
 // Braille characters have Unicode codes 10240 - 10495 (0x2800 - 0x28FF).
 QChar PerkinsModel::pointsToUnicode(QString points)
 {
-    int code = 0;
+    int code = 10240;
     foreach (const QString &digit, points) {
         code += pow(2, digit.toInt() - 1);
     }
-    code += 10240;
     return QChar(code);
 }
+
 
 int PerkinsModel::getRandomBox()
 {
@@ -204,6 +210,7 @@ int PerkinsModel::getRandomBox()
         return 4;
 }
 
+
 QString PerkinsModel::dataLocation()
 {
 #ifdef PKGDATADIR
@@ -214,12 +221,14 @@ QString PerkinsModel::dataLocation()
     return data_folder;
 }
 
+
 QString PerkinsModel::shortLocale()
 {
     QString shortLocale = QLocale::system().name().left(2);
     if (shortLocale == "C") shortLocale = "en";
     return shortLocale;
 }
+
 
 void PerkinsModel::populateLevels()
 {
@@ -249,6 +258,7 @@ void PerkinsModel::populateLevels()
         qDebug() << level->string();
     }
 }
+
 
 void PerkinsModel::populateBrailleHash()
 {
@@ -287,6 +297,7 @@ void PerkinsModel::populateBrailleHash()
         qDebug() << (*iter);
     }
 }
+
 
 void PerkinsModel::clearSettings()
 {

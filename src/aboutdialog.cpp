@@ -21,6 +21,12 @@
 #include <QFile>
 #include <QTextStream>
 
+/*!
+    \class AboutDialog
+    The AboutDialog class represents the application's About box.
+ */
+
+/*! AboutDialog constructor */
 AboutDialog::AboutDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AboutDialog)
@@ -29,8 +35,9 @@ AboutDialog::AboutDialog(QWidget *parent) :
 
     ui->textLabel->setText(tr("Nela %1").arg(qApp->applicationVersion()));
     setFont(QFont("Tiresias PCfont", 12));
+    ui->tabWidget->setCurrentWidget(ui->aboutTab);
 
-    // Fill in Authors tab the people who wrote the software
+    // Fill in Authors tab with the people who wrote the software
     QString authors;
     authors = format(QString::fromUtf8("Enrique Matías Sánchez"),
                      "quique@unizar.es", tr("Main Developer."));
@@ -47,7 +54,7 @@ AboutDialog::AboutDialog(QWidget *parent) :
     ui->authorsText->setText(authors);
     ui->authorsText->setReadOnly(true);
 
-    // Fill in Thanks To tab the people who helped
+    // Fill in Thanks To tab with the people who helped
     QString contributors;
 
     contributors = format(QString::fromUtf8("Setuniman"), "",
@@ -59,8 +66,8 @@ AboutDialog::AboutDialog(QWidget *parent) :
     contributors += format(QString::fromUtf8("fastson"), "",
                            tr("Recorder of typewriter_slow.wav, on which keystroke.mp3 is based. Released under CC by 3.0."));
 
-    contributors += format(QString::fromUtf8("Ralph Aichinger"), "",
-                           tr("Author of the photograph used as background in the splashscreen. Released under CC by."));
+    contributors += format(QString::fromUtf8("Ralph Aichinger"), "ralph@pangea.at",
+                           tr("Author of the photograph used as background in the splashscreen. Released under CC by 3.0."));
 
     contributors += format(QString::fromUtf8("Nuno Pinheiro"), "nuno@nuno-icons.com",
                            tr("Made the icon of Akregator, on which Nela's icon is based."));
@@ -88,6 +95,10 @@ AboutDialog::AboutDialog(QWidget *parent) :
     ui->licenseText->setReadOnly(true);
 }
 
+/*!
+    Formats a credit entry using the supplied name, address and role.
+    Returns the formatted QString for this entry.
+ */
 QString AboutDialog::format(QString credit, QString email, QString role)
 {
     if (!email.isEmpty())
@@ -97,6 +108,7 @@ QString AboutDialog::format(QString credit, QString email, QString role)
     return credit;
 }
 
+/*! AboutDialog destructor */
 AboutDialog::~AboutDialog()
 {
     delete ui;

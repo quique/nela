@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    id="svg1"
+    sodipodi:docname="_svgclean2.svg"
+    inkscape:export-ydpi="300"
+    inkscape:export-filename="M:\Presentations\20110924 - Forsker Grand Prix Oslofinale\sneeze.png"
+    viewBox="0 0 110.13 118.9"
+    sodipodi:version="0.32"
+    inkscape:export-xdpi="300"
+    version="1.1"
+    inkscape:version="0.48.3.1 r9886"
+  >
+  <defs
+      id="defs3"
+    >
+    <radialGradient
+        id="radialGradient830"
+        fx="76.035"
+        fy="49.008"
+        gradientUnits="userSpaceOnUse"
+        cy="48.245"
+        cx="75.284"
+        gradientTransform="matrix(1.0357 0 0 1.0361 -24.689 -25.482)"
+        r="38.95"
+      >
+      <stop
+          id="stop828"
+          style="stop-color:#ffffff"
+          offset="0"
+      />
+      <stop
+          id="stop829"
+          style="stop-color:#ffc613"
+          offset="1"
+      />
+    </radialGradient
+    >
+  </defs
+  >
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#666666"
+      inkscape:pageshadow="2"
+      inkscape:window-y="0"
+      pagecolor="#ffffff"
+      inkscape:window-maximized="0"
+      inkscape:zoom="2.4622889"
+      inkscape:window-x="0"
+      inkscape:window-height="645"
+      showgrid="false"
+      borderopacity="1.0"
+      inkscape:current-layer="svg1"
+      inkscape:cx="123.44479"
+      inkscape:cy="-841.61588"
+      inkscape:window-width="674"
+      inkscape:pageopacity="0.0"
+  />
+  <path
+      id="path826"
+      style="stroke-linejoin:round;fill-rule:evenodd;stroke:#000000;stroke-width:2.5;fill:url(#radialGradient830)"
+      inkscape:connector-curvature="0"
+      d="m108.88 50.588c0 27.235-22.111 49.342-49.363 49.342-27.247 0-49.36-22.107-49.36-49.342 0-27.234 22.113-49.338 49.36-49.338 27.252 0 49.363 22.104 49.363 49.338z"
+  />
+  <path
+      id="path3012"
+      style="stroke:#000000;stroke-width:2.5;fill:none"
+      inkscape:connector-curvature="0"
+      d="m28.651 32.361 20.385 11.458-22.543 3.6184"
+  />
+  <path
+      id="path3833"
+      d="m90.389 32.361-20.385 11.458 22.543 3.6184"
+      style="stroke:#000000;stroke-width:2.5;fill:none"
+      inkscape:connector-curvature="0"
+  />
+  <path
+      id="path3859"
+      inkscape:connector-curvature="0"
+      sodipodi:nodetypes="czzczczc"
+      style="stroke:#000000;stroke-width:2.5;fill:#ffffff"
+      d="m1.25 65.754c16.512-0.623 27.136 1.801 44.461-7.553s23.49-6.321 17.335 12.254c-6.155 18.577-28.149 32.887-43.848 47.197-0.19145-6.2221 2.0505-13.748-0.57435-18.666s-8.711-4.5948-13.066-6.8922c1.7709-4.7384 3.3698-6.8109 5.3127-14.215 1.9429-7.4043-7.9189-6.0484-9.6203-12.125z"
+  />
+  <path
+      id="path3861"
+      inkscape:connector-curvature="0"
+      sodipodi:nodetypes="cc"
+      style="stroke:#000000;stroke-width:2.5;fill:none"
+      d="m18.472 75.333c8.1661-4.9933 16.738-1.2549 23.889-5.2328"
+  />
+  <path
+      id="path3863"
+      inkscape:connector-curvature="0"
+      sodipodi:nodetypes="cc"
+      style="stroke:#000000;stroke-width:2.5;fill:none"
+      d="m21.297 91.512c10.452-1.4129 17.654-6.684 25.263-13.376"
+  />
+  <path
+      id="path3865"
+      inkscape:connector-curvature="0"
+      sodipodi:nodetypes="cc"
+      style="stroke:#000000;stroke-width:2.5;fill:none"
+      d="m65.468 85.112c2.031-8.465 7.31-13.474 17.061-13.203"
+  />
+  <metadata
+      id="metadata15"
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>

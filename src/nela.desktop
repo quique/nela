@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Nela
+Name[es]=Nela
+Comment=Learn the Braille code using spaced repetition
+Comment[es]=Aprenda el código Braille usando repaso espacido
+GenericName=Braille Trainer
+GenericName[es]=Entrenador Braille
+Exec=nela
+Terminal=false
+Type=Application
+Icon=nela
+Categories=Accessibility;Education;Languages;Qt;Utility;
+StartupNotify=true
+

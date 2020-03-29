@@ -1,0 +1,9 @@
+To build and install Nela from source code, run these commands:
+$ qmake nela.pro
+$ make
+$ sudo make install
+$ nela
+
+Prebuilt executables for Microsoft Windows can be downloaded at
+    http://forja.rediris.es/frs/?group_id=998
+

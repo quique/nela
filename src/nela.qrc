@@ -1,0 +1,9 @@
+<RCC>
+
+    <qresource prefix="/">
+        <file>../COPYING</file>
+        <file>images/splashscreen.jpg</file>
+        <file>icons/hicolor/32x32/apps/nela.png</file>
+        <file>icons/hicolor/256x256/apps/nela.png</file>
+    </qresource>
+</RCC>

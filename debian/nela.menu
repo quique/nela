@@ -1,0 +1,7 @@
+?package(nela): \
+  needs="X11" \
+  section="Applications/Education" \
+  title="Nela" \
+  longtitle="Nela Braille Trainer" \
+  command="nela" \
+  icon="/usr/share/pixmaps/nela.xpm"

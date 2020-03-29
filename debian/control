@@ -1,0 +1,21 @@
+Source: nela
+Section: misc
+Priority: optional
+Maintainer: Enrique Matías Sánchez <quique@unizar.es>
+Build-Depends: debhelper (>= 8), libqt4-dev (>= 4.6), libphonon-dev (>= 4.6)
+Standards-Version: 3.9.1
+Homepage: http://nelaproject.blogspot.com.es/
+
+Package: nela
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ttf-tiresias, ttf-dejavu
+Description: Braille code trainer
+ nela is a software trainer to learn the Braille code, targeted at children
+ with visual impairment (or completely blind).
+ .
+ It teaches the Braille code slowly and didactically.  Dots, letters,
+ syllables, and numbers are introduced in a pedagogically appropriate order.
+ Any letter the user has difficulty learning, will be presented more often.
+ .
+ Simulating a Perkins machine on the keyboard, its interface intends to be
+ accesible, simple, and easy to use.

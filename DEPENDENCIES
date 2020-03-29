@@ -1,0 +1,26 @@
+The following packages should be installed before nela is installed:
+
+* Qt libraries
+  + Qt is a cross-platform C++ application framework, which includes
+    a rich set of widgets that provide standard GUI functionality.
+    Nela is being developed on Qt 4.7, but it will probably run on any 
+    Qt 4.4+ release.
+  + Homepage:
+    http://qt.nokia.com/
+
+* Tiresias PCfont TrueType Font
+  + This is a family of realist sans-serif typefaces that were designed
+    for best legibility by people with impaired vision at the Scientific
+    Research Unit of Royal National Institute of the Blind in London.
+  + Homepage:
+    http://www.tiresias.org
+
+* DejaVu Sans TrueType Font
+  + DejaVu provides an expanded version of the Vera font family aiming
+    for quality and broader Unicode coverage while retaining the 
+    original Vera style. DejaVu currently works towards conformance with
+    the Multilingual European Standards (MES-1 and MES-2) for Unicode
+    coverage.
+  + Homepage:
+    http://dejavu-fonts.org/
+

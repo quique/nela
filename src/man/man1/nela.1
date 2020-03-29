@@ -1,0 +1,97 @@
+.\" Copyright (C) 2012 Enrique Matías Sánchez <quique at unizar.es>
+.\"                                                                        
+.\" This file is part of Nela.                                           
+.\"
+.\" This program is free software: you can redistribute it and/or modify
+.\" it under the terms of the GNU General Public License as published by
+.\" the Free Software Foundation, either version 3 of the License, or
+.\" (at your option) any later version.
+.\"
+.\" This program is distributed in the hope that it will be useful,
+.\" but WITHOUT ANY WARRANTY; without even the implied warranty of
+.\" MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+.\" GNU General Public License for more details.
+.\"
+.\" You should have received a copy of the GNU General Public License
+.\" along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+.TH Nela 1 "April 21, 2012"
+.SH NAME
+Nela \- A Braille code trainer.
+
+.SH SYNOPSIS
+.B nela [Qt\ Generic\ Options]
+
+.SH DESCRIPTION
+.B nela
+is a software trainer to learn the Braille code, targeted at children
+with visual impairment (or completely blind).
+
+It teaches the Braille code slowly and didactically.  Dots, letters,
+syllables, and numbers are introduced in a pedagogically appropiate order.  
+Any letter the user has difficulty learning, will be presented more often.
+
+Simulating a Perkins machine on the keyboard, its interface intends to be
+accesible, simple, and easy to use.
+
+.SH OPTIONS
+All applications based on the Qt toolkit accept a number of options.  
+See <http://qt-project.org/doc/qapplication.html#QApplication> for details.
+
+.SH USAGE
+All the key bindings described here are the defaults in Nela.  
+It should be possible to customize them in order to use different keyboard
+layouts.  Several keys can be pressed at the same time.
+
+.IP f
+Press point 1.
+.IP d
+Press point 2.
+.IP s
+Press point 3.
+.IP a
+Press point 7.
+.IP j
+Press point 4.
+.IP k
+Press point 5.
+.IP l
+Press point 6.
+.IP \[~n]
+Press point 8.
+.IP Intro
+Repeat last instruction.
+.IP esc
+Quit nela.
+
+.\" .SH COMMANDS
+
+.\" .SH CONFIG
+
+.SH FILES
+.IP "/usr/share/nela/tables/<lang>.txt"
+Character -> Braille code tables a given language.
+.IP "/usr/share/nela/levels/<lang>.csv"
+Levels for a given language.
+
+.\" .SH EXAMPLES
+
+.SH BUGS
+To report a bug, please visit <https://forja.rediris.es/tracker/?func=add&group_id=998&atid=3578>
+.br
+Please notice that you'll need to register as a user of this forge.
+
+.SH COPYRIGHT
+Copyright \(co 2012 Enrique Mat\['i]as S\['a]nchez.  
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+.br
+This is free software: you are free to change and redistribute it.  
+There is NO WARRANTY, to the extent permitted by law.
+
+.SH SEE ALSO
+.TP
+.B Nela Home Page
+<http://nelaproject.blogspot.com.es>
+
+.SH AUTHOR
+Written by Enrique Mat\['i]as S\['a]nchez <quique@unizar\&.es>.

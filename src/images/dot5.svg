@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="154" height="215" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="154" height="215" fill="white" stroke-width="1" stroke="black" />
+<circle cx="46.333333" cy="46.250000" r="14.500000" stroke="black" stroke-width="1" fill="none" />
+<circle cx="107.666667" cy="46.250000" r="14.500000" stroke="black" stroke-width="1" fill="none" />
+<circle cx="46.333333" cy="107.500000" r="14.500000" stroke="black" stroke-width="1" fill="none" />
+<circle cx="107.666667" cy="107.500000" r="15.000000" fill="black" />
+<circle cx="46.333333" cy="168.750000" r="14.500000" stroke="black" stroke-width="1" fill="none" />
+<circle cx="107.666667" cy="168.750000" r="14.500000" stroke="black" stroke-width="1" fill="none" />
+<circle cx="46.333333" cy="230.000000" r="14.500000" stroke="black" stroke-width="1" fill="none" />
+<circle cx="107.666667" cy="230.000000" r="14.500000" stroke="black" stroke-width="1" fill="none" />
+</svg>

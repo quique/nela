@@ -1,0 +1,79 @@
+This is the nela package.
+
+= About nela =
+
+nela is a software trainer to learn the Braille code, targeted at children
+with visual impairment (or completely blind).
+
+It teaches the Braille code slowly and didactically.  Dots, letters, 
+syllables, and numbers are introduced in a pedagogically appropriate order.
+Any letter the user has difficulty learning, will be presented more often.
+
+Simulating a Perkins machine on the keyboard, its interface intends to be 
+accesible, simple, and easy to use.
+
+It's being developed using the Qt libraries, and tested on GNU/Linux and
+Microsoft Windows (it would probably also run on Mac OS X with little or
+no modification).
+
+Please contribute in any way you can.
+
+
+= FileSystem Hierarchy =
+
+/trunk    - Main development area. This is where the next major release of
+            the code lives, and generally has all the newest features.
+/branches - A branch is a copy of code derived from a certain point in the
+            trunk.
+            It can be used for applying major changes to the code while
+            preserving the integrity of the code in the trunk.  If the 
+            major changes work according to plan, they are usually merged 
+            back into the trunk.
+            Creating a branch every time a major version is released allows
+            to do bug fixes and make a new release without having to
+            release the newest -possibly unfinished or untested- features.
+/tags     - A tag is a point-in-time copy of the code as it was at that 
+            state.  Useful to signal a major release of the software, or 
+            the most stable point of the software before major revisions
+            on the trunk were applied.
+
+/trunk/src              - Source code of the program.
+/trunk/src/icons        - Icons used for the program.
+/trunk/src/levels       - Levels for different languages.
+/trunk/src/man          - Manual pages for Unix-like operating systems.
+/trunk/src/sounds       - Sounds used in the application, for feedback or 
+                          giving instructions.
+/trunk/src/tables       - Character -> Braille code tables for languages.
+/trunk/src/translations - Translations to different languages.
+
+
+= Resources =
+
+Blog:
+    http://nelaproject.blogspot.com.es/
+
+Twitter:
+    https://twitter.com/#!/nelaproject
+
+Downloads:
+    http://forja.rediris.es/frs/?group_id=998
+
+Development (Subversion repository, bug tracker, etc):
+    https://forja.rediris.es/projects/cusl6-nela/
+
+
+= Dependencies =
+
+See DEPENDENCIES file.
+
+
+= Installation =
+
+See INSTALL file.
+
+
+= Additional Information =
+
+A short interview with author (in Spanish) is located at
+    http://osluz.unizar.es/content/entrevista-con-el-creador-del-proyecto-nela
+
